@@ -1,0 +1,13 @@
+{
+  "search.exclude": {
+    "**/dist": true,
+    "**/.next": true,
+    "**/.nuxt": true,
+    "**/.vercel": true,
+    "**/*.yaml": true,
+    "**/node_modules": true,
+    "**/public/images/**": true
+  },
+  "search.useIgnoreFiles": false,
+  "diffEditor.ignoreTrimWhitespace": false
+}

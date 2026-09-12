@@ -1,0 +1,171 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "cSpell.language": "en,en-US,vi",
+  "cSpell.userWords": [
+    "actived",
+    "ahooks",
+    "antd",
+    "anticon",
+    "astro",
+    "axios",
+    "clsx",
+    "daisyui",
+    "dexie",
+    "dompurify",
+    "echarts",
+    "esbenp",
+    "formik",
+    "gltf",
+    "heroicons",
+    "hookform",
+    "lucide",
+    "nextauth",
+    "nextjs",
+    "nuxtjs",
+    "pinia",
+    "popconfirm",
+    "prettier",
+    "qrcode",
+    "reduxjs",
+    "sonner",
+    "stylelint",
+    "swiper",
+    "tailwindcss",
+    "tamagui",
+    "tanstack",
+    "tiptap",
+    "toploader",
+    "tseslint",
+    "vercel",
+    "vsicons",
+    "zustand"
+  ],
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "never"
+  },
+  "editor.fontFamily": "'Cascadia Code', 'Roboto', 'Arial', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.unicodeHighlight.allowedLocales": {
+    "ja": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.outputLevel": "error",
+  "gitlens.views.worktrees.files.layout": "list",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "search.exclude": {
+    "**/dist": true,
+    "**/.nuxt": true,
+    "**/.next": true,
+    "**/.vercel": true,
+    "**/*.yaml": true,
+    "**/node_modules": true,
+    "**/public/images/**": true
+  },
+  "search.useIgnoreFiles": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/layout.tsx": "${dirname} - layout.tsx",
+    "**/app/**/page.tsx": "${dirname} - page.tsx",
+    "**/app/**/layout.jsx": "${dirname} - layout.jsx",
+    "**/app/**/page.jsx": "${dirname} - page.jsx"
+  },
+  "workbench.startupEditor": "none",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.tabSize": 2,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "claudeCode.selectedModel": "default",
+  "workbench.colorTheme": "calmppuccin-macchiato",
+  "update.mode": "none",
+  "workbench.activityBar.location": "top",
+  "windsurf.autoContinue": 0,
+  "windsurf.allowCascadeAccessGitignoreFiles": true,
+  "windsurf.searchMaxWorkspaceFileCount": 8000,
+  "windsurf.acp.enabledAgents": {
+    "devin-cloud": false
+  },
+  "claudeCode.preferredLocation": "panel",
+  "files.autoSave": "afterDelay",
+  "workbench.sideBar.location": "right",
+  "mcpServers": {},
+  "windsurf.terminal.cascadeProfile.osx": "managed",
+  "codium.customInstructions.allMessages": "",
+  "codium.customInstructions.specificCommands": {},
+  "codium.editorButton": true,
+  "codium.codeCompletion.enable": false,
+  "codium.rag.maxRemoteSnippets": 5,
+  "codium.terminalAllowedCommands": [],
+  "codium.terminalBlockedCommands": [],
+  "codium.commitMessage.format": "",
+  "codium.agenticAiCliCommands": [],
+  "explorer.confirmPasteNative": false,
+  "python.languageServer": "Default",
+  "agCockpit.statusBarFormat": "compact",
+  "agCockpit.notificationEnabled": false,
+  "agCockpit.displayMode": "webview",
+  "windsurfPyright.disableLanguageServices": true,
+  "cursorpyright.disableLanguageServices": true,
+  "agCockpit.groupingEnabled": true,
+  "mssql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
+  "mssql.objectExplorer.groupBySchema": false,
+  "mssql.autoDisableNonTSqlLanguageService": false,
+  "security.promptForLocalFileProtocolHandling": false,
+  "window.restoreWindows": "one"
+}

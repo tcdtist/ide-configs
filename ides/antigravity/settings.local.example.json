@@ -1,0 +1,25 @@
+{
+  "_comment": "Rename this file to settings.local.json for machine-specific overrides. Never commit settings.local.json.",
+  "git-autoconfig.configList": [
+    {
+      "user.email": "personal@example.com",
+      "user.name": "Your Name"
+    },
+    {
+      "user.email": "work@example.com",
+      "user.name": "Your Work Identity"
+    }
+  ],
+  "git-autoconfig.ignoreRootList": [
+    "/path/to/specific/repo/to/ignore"
+  ],
+  "mssql.connections": [
+    {
+      "authenticationType": "SqlLogin",
+      "server": "localhost",
+      "user": "sa",
+      "password": "",
+      "profileName": "Local Development"
+    }
+  ]
+}

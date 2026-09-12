@@ -1,0 +1,138 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "editor.inlineSuggest.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never",
+    "source.fixAll": "explicit"
+  },
+  "workbench.startupEditor": "none",
+  "git.ignoreRebaseWarning": true,
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Cascadia Code', 'Roboto', 'Arial', 'Courier New', monospace",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "actived",
+    "ahooks",
+    "antd",
+    "anticon",
+    "astro",
+    "axios",
+    "clsx",
+    "daisyui",
+    "dexie",
+    "dompurify",
+    "echarts",
+    "esbenp",
+    "formik",
+    "gltf",
+    "heroicons",
+    "hookform",
+    "lucide",
+    "nextauth",
+    "nextjs",
+    "nuxtjs",
+    "pinia",
+    "popconfirm",
+    "prettier",
+    "qrcode",
+    "reduxjs",
+    "sonner",
+    "stylelint",
+    "swiper",
+    "tailwindcss",
+    "tamagui",
+    "tanstack",
+    "tiptap",
+    "toploader",
+    "tseslint",
+    "vercel",
+    "vsicons",
+    "zustand"
+  ],
+  "git.confirmSync": false,
+  "editor.fontSize": 13,
+  "git.autofetch": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "update.mode": "none",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.formatOnSave": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.yaml": true,
+    "**/.next": true
+  },
+  "search.useIgnoreFiles": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.unicodeHighlight.allowedLocales": {
+    "ja": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "gitlens.launchpad.indicator.enabled": false,
+  "git.enableSmartCommit": true,
+  "oneDarkPro.editorTheme": "One Dark Pro Darker",
+  "oneDarkPro.italic": false,
+  "gitlens.outputLevel": "error",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "chat.agent.maxRequests": 100,
+  "chat.tools.urls.autoApprove": {
+    "https://github.com": {
+      "approveRequest": false,
+      "approveResponse": true
+    },
+    "https://learn.microsoft.com/en-us/graph/api/resources/teamsrecording": true,
+    "https://learn.microsoft.com/en-us/graph/api/resources": true,
+    "https://learn.microsoft.com/en-us/graph/api": true,
+    "https://learn.microsoft.com/en-us/graph": true,
+    "https://learn.microsoft.com/en-us": true,
+    "https://learn.microsoft.com": true,
+    "https://*.microsoft.com": true,
+    "https://learn.microsoft.com/en-us/graph/api/resources/driveitem": true,
+    "https://learn.microsoft.com/en-us/graph/api/channel-get-messagedetail": true,
+    "https://learn.microsoft.com/en-us/graph/auth-v2-service-principal": true,
+    "https://learn.microsoft.com/en-us/graph/auth-v2-user": true
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "workbench.colorTheme": "calmppuccin-macchiato",
+  "editor.tabSize": 2,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/layout.tsx": "${dirname} - layout.tsx",
+    "**/app/**/page.tsx": "${dirname} - page.tsx",
+    "**/app/**/layout.jsx": "${dirname} - layout.jsx",
+    "**/app/**/page.jsx": "${dirname} - page.jsx"
+  }
+}

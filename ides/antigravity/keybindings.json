@@ -1,0 +1,42 @@
+[
+  {
+    "key": "cmd+enter",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "git.commit"
+        },
+        {
+          "command": "git.push"
+        }
+      ]
+    }
+  },
+  {
+    "key": "cmd+shift+enter",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "workbench.action.files.saveAll"
+        },
+        {
+          "command": "git.commit"
+        },
+        {
+          "command": "git.push"
+        }
+      ]
+    }
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "alt+cmd+s",
+    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+    "when": "cursor.agentIdeUnification.enabled == true && !isAuxiliaryWindowFocusedContext"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "editor.tabSize": 2,
+  "editor.fontSize": 13,
+  "editor.fontFamily": "'Cascadia Code', 'Roboto', 'Arial', 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "calmppuccin-macchiato",
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/layout.tsx": "${dirname} - layout.tsx",
+    "**/app/**/page.tsx": "${dirname} - page.tsx",
+    "**/app/**/layout.jsx": "${dirname} - layout.jsx",
+    "**/app/**/page.jsx": "${dirname} - page.jsx"
+  }
+}

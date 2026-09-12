@@ -1,0 +1,11 @@
+{
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/layout.tsx": "${dirname} - layout.tsx",
+    "**/app/**/page.tsx": "${dirname} - page.tsx",
+    "**/app/**/layout.jsx": "${dirname} - layout.jsx",
+    "**/app/**/page.jsx": "${dirname} - page.jsx",
+    "**/app/**/loading.tsx": "${dirname} - loading.tsx",
+    "**/app/**/error.tsx": "${dirname} - error.tsx",
+    "**/app/**/not-found.tsx": "${dirname} - not-found.tsx"
+  }
+}

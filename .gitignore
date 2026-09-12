@@ -1,0 +1,32 @@
+# OS Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Backup & Scratch
+*.bak
+*.tmp
+*.log
+tmp/
+scratch/
+
+# Environments & Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Local & Private Agent Guidelines
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+
+# Local secrets & credentials (allow .example files)
+*.local.json
+!*.local.example.json
+*.private.*
+!*.private.example.*
+.env
+.env.*
+!.env.example
