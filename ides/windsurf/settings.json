@@ -2,6 +2,22 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[go.mod]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -65,6 +81,23 @@
   "gitlens.telemetry.enabled": false,
   "gitlens.views.repositories.compact": true,
   "gitlens.views.worktrees.files.layout": "list",
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "gopls": {
+    "analyses": {
+      "shadow": true,
+      "unusedparams": true,
+      "unusedwrite": true
+    },
+    "completeUnimported": true,
+    "staticcheck": true,
+    "ui.inlayhint.hints": {
+      "compositeLiteralFields": true,
+      "constantValues": true,
+      "parameterNames": true
+    },
+    "ui.semanticTokens": true
+  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "search.exclude": {
     "**/dist": true,
