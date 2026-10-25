@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "bradlc.vscode-tailwindcss",
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "jlcodes.antigravity-cockpit",
+    "kenan-salar.calmppuccin-vscode",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "meta.pyrefly",
+    "ms-azuretools.vscode-containers",
+    "ms-azuretools.vscode-docker",
+    "ms-python.debugpy",
+    "ms-python.python",
+    "ms-python.vscode-python-envs",
+    "repreng.csv",
+    "vscode-icons-team.vscode-icons",
+    "vue.volar"
+  ]
+}

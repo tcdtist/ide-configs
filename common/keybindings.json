@@ -1,0 +1,6 @@
+[
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.reloadWindow"
+  }
+]

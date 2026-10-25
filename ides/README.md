@@ -1,33 +1,42 @@
 # Editor-Specific Configurations (`ides/`)
 
-This directory contains tailored configuration files (`settings.json`, `keybindings.json`) for each supported editor.
+This directory contains tailored configuration files (`settings.json`, `extensions.json`) for each supported editor. Shared keybindings live centrally under [`common/keybindings.json`](../common/keybindings.json).
 
 ## Supported Editors & macOS Paths
 
-| Editor | Directory | Settings Path on macOS | Extensions Directory |
+| Editor | Directory | Settings Path on macOS | Extensions Manifest |
 | :--- | :--- | :--- | :--- |
-| **Antigravity IDE** | [`antigravity/`](antigravity/) | `~/Library/Application Support/Antigravity IDE/User/` | `~/.antigravity-ide/extensions/` |
-| **VS Code** | [`vscode/`](vscode/) | `~/Library/Application Support/Code/User/` | `~/.vscode/extensions/` |
-| **Cursor** | [`cursor/`](cursor/) | `~/Library/Application Support/Cursor/User/` | `~/.cursor/extensions/` |
-| **Windsurf** | [`windsurf/`](windsurf/) | `~/Library/Application Support/Windsurf/User/` | `~/.windsurf/extensions/` |
+| **Antigravity IDE** | [`antigravity/`](antigravity/) | `~/Library/Application Support/Antigravity IDE/User/` | 19 extensions |
+| **VS Code** | [`vscode/`](vscode/) | `~/Library/Application Support/Code/User/` | 18 extensions |
+| **Cursor** | [`cursor/`](cursor/) | `~/Library/Application Support/Cursor/User/` | 18 extensions |
+| **Windsurf** | [`windsurf/`](windsurf/) | `~/Library/Application Support/Windsurf/User/` | 15 extensions |
 
 ---
 
-## Private Overrides Workflow (`settings.local.json`)
+## Automated Deployment
 
-To configure machine-specific, sensitive, or personal settings (such as local database connection strings or personal `git-autoconfig` identities) without polluting public git tracking:
+To sync settings and install curated extensions automatically, use:
 
-1. Copy the example template in the target editor directory:
-   ```bash
-   cp ides/antigravity/settings.local.example.json ides/antigravity/settings.local.json
-   ```
-2. Fill in your personal credentials.
-3. `settings.local.json` is automatically ignored by `.gitignore`.
+```bash
+# Setup Antigravity IDE (default)
+python3 scripts/setup-ide.py --ide antigravity
+
+# Or setup all detected IDEs
+python3 scripts/setup-ide.py --ide all
+```
+
+---
+
+## Private Overrides (`settings.local.json`)
+
+To configure machine-specific, sensitive, or personal settings without polluting public git tracking:
+- Create `settings.local.json` in your local IDE User configuration folder.
+- `*.local.json` is globally ignored by `.gitignore`.
 
 ---
 
 ## Agent Guidance
 When an agent is requested to modify editor settings:
-- Identify the target editor from the prompt (e.g., Antigravity, Cursor, VS Code, Windsurf).
+- Identify the target editor from the prompt (Antigravity, Cursor, VS Code, Windsurf).
 - Only mutate the corresponding `ides/<editor>/` subdirectory.
 - Preserve common rules defined in `../common/`.

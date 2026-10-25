@@ -28,16 +28,19 @@ Use this directory map to navigate directly to the relevant module. Keep modific
 
 | Domain / Concern | Target Path | Description |
 | :--- | :--- | :--- |
+| **New Machine Setup** | [`docs/new-machine-setup.md`](docs/new-machine-setup.md) | 1-minute workstation bootstrap guide |
 | **Theme & Palette** | [`common/themes/`](common/themes/) | 3-theme minimalist palette, picker trimming, and theme docs |
+| **Keybindings (Lean)** | [`common/keybindings.json`](common/keybindings.json) | Shared window reload shortcut (`Cmd+Shift+R`) |
+| **Common Extensions** | [`common/extensions.json`](common/extensions.json) | 13 shared core extensions recommendation |
 | **Code Formatting & Linting** | [`common/formatting.json`](common/formatting.json) | Shared Prettier configs, ESLint fix-on-save, fonts, and tab sizes |
 | **Git & GitLens Zen Mode** | [`common/git.json`](common/git.json) | Shared Git ergonomics & zero-bloat inline line blame |
 | **Search Exclusions** | [`common/search-exclude.json`](common/search-exclude.json) | Build artifact (`dist`, `.next`, `node_modules`) search ignores |
 | **Tab Labels (Next.js)** | [`common/nextjs-custom-labels.json`](common/nextjs-custom-labels.json) | Next.js App Router tab naming patterns (`${dirname} - ${filename}`) |
-| **Antigravity IDE** | [`ides/antigravity/`](ides/antigravity/) | Antigravity settings, keybindings, and local templates |
-| **VS Code** | [`ides/vscode/`](ides/vscode/) | VS Code specific preferences |
-| **Cursor** | [`ides/cursor/`](ides/cursor/) | Cursor specific settings & AI rules |
-| **Windsurf** | [`ides/windsurf/`](ides/windsurf/) | Windsurf specific settings |
-| **Automation Scripts** | [`scripts/`](scripts/) | CLI utilities for automated theme setup and restoration |
+| **Antigravity IDE** | [`ides/antigravity/`](ides/antigravity/) | Antigravity settings & 19 curated extensions |
+| **VS Code** | [`ides/vscode/`](ides/vscode/) | VS Code settings & 18 curated extensions |
+| **Cursor** | [`ides/cursor/`](ides/cursor/) | Cursor settings & 18 curated extensions |
+| **Windsurf** | [`ides/windsurf/`](ides/windsurf/) | Windsurf settings & 15 curated extensions |
+| **Automation Scripts** | [`scripts/`](scripts/) | CLI utilities for automated IDE setup (`setup-ide.py`) and themes (`setup-curated-themes.py`) |
 
 ---
 
@@ -53,27 +56,32 @@ When modifying or extending this repository:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/tcdtist/ide-configs.git
-cd ide-configs
+git clone git@github.com-tcdtist:tcdtist/ide-configs.git ~/dev/me/ide-configs
+cd ~/dev/me/ide-configs
 ```
 
-### 2. Apply Curated 3-Theme Palette
-Install the `kenan-salar.calmppuccin-vscode` extension in your editor, then run:
+### 2. Automated 1-Minute IDE Setup
+Run `scripts/setup-ide.py` to sync preferences, install curated extensions, and apply lean keybindings:
 
 ```bash
 # Configure Antigravity IDE (default)
-python3 scripts/setup-curated-themes.py --ide antigravity
+python3 scripts/setup-ide.py --ide antigravity
 
 # Or configure all detected IDEs
-python3 scripts/setup-curated-themes.py --ide all
+python3 scripts/setup-ide.py --ide all
 
-# Or target specific editors
-python3 scripts/setup-curated-themes.py --ide vscode
-python3 scripts/setup-curated-themes.py --ide cursor
-python3 scripts/setup-curated-themes.py --ide windsurf
+# Preview without making changes
+python3 scripts/setup-ide.py --ide all --dry-run
 ```
 
-### 3. Reload Your Editor
+> See [New Machine Setup Guide](docs/new-machine-setup.md) for full options and flags.
+
+### 3. (Optional) Apply Curated 3-Theme Minimalist Palette
+```bash
+python3 scripts/setup-curated-themes.py --ide antigravity
+```
+
+### 4. Reload Your Editor
 Press `Cmd + Shift + R` (or `Cmd + Shift + P` -> `Developer: Reload Window`).
 
 ### To Restore Default Themes:
