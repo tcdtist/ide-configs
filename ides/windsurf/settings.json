@@ -1,20 +1,148 @@
 {
-  "editor.tabSize": 2,
-  "editor.fontSize": 13,
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "cSpell.language": "en,en-US,vi",
+  "cSpell.userWords": [
+    "actived",
+    "ahooks",
+    "antd",
+    "anticon",
+    "astro",
+    "axios",
+    "clsx",
+    "daisyui",
+    "dexie",
+    "dompurify",
+    "echarts",
+    "esbenp",
+    "formik",
+    "gltf",
+    "heroicons",
+    "hookform",
+    "lucide",
+    "nextauth",
+    "nextjs",
+    "nuxtjs",
+    "pinia",
+    "popconfirm",
+    "prettier",
+    "qrcode",
+    "reduxjs",
+    "sonner",
+    "stylelint",
+    "swiper",
+    "tailwindcss",
+    "tamagui",
+    "tanstack",
+    "tiptap",
+    "toploader",
+    "tseslint",
+    "vercel",
+    "vsicons",
+    "zustand"
+  ],
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "never"
+  },
   "editor.fontFamily": "'Cascadia Code', 'Roboto', 'Arial', 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "editor.fontSize": 13,
   "editor.formatOnSave": true,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "calmppuccin-macchiato",
-  "editor.minimap.enabled": false,
   "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedLocales": {
+    "ja": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.ai.model": null,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.currentLine.enabled": true,
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": true,
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.outputLevel": "error",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "gitlens.views.repositories.compact": true,
+  "gitlens.views.worktrees.files.layout": "list",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "search.exclude": {
+    "**/dist": true,
+    "**/.nuxt": true,
+    "**/.next": true,
+    "**/.vercel": true,
+    "**/*.yaml": true,
+    "**/node_modules": true,
+    "**/public/images/**": true
+  },
+  "search.useIgnoreFiles": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "Q_NEW_SESSION": "1"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.mode": "none",
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "calmppuccin-macchiato",
   "workbench.editor.customLabels.patterns": {
     "**/app/**/layout.tsx": "${dirname} - layout.tsx",
     "**/app/**/page.tsx": "${dirname} - page.tsx",
     "**/app/**/layout.jsx": "${dirname} - layout.jsx",
     "**/app/**/page.jsx": "${dirname} - page.jsx"
-  }
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none"
 }

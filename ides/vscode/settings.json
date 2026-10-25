@@ -1,25 +1,40 @@
 {
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "js/ts.implicitProjectConfig.checkJs": true,
-  "editor.inlineSuggest.enabled": true,
-  "explorer.confirmDragAndDrop": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "never",
-    "source.fixAll": "explicit"
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
-  "workbench.startupEditor": "none",
-  "git.ignoreRebaseWarning": true,
-  "explorer.confirmDelete": false,
-  "editor.minimap.enabled": false,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "'Cascadia Code', 'Roboto', 'Arial', 'Courier New', monospace",
-  "[typescriptreact]": {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "cSpell.language": "en,en-US,vi",
   "cSpell.userWords": [
     "actived",
     "ahooks",
@@ -59,80 +74,75 @@
     "vsicons",
     "zustand"
   ],
-  "git.confirmSync": false,
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "never"
+  },
+  "editor.fontFamily": "'Cascadia Code', 'Roboto', 'Arial', 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 13,
-  "git.autofetch": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.formatOnSave": false
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.formatOnSave": false
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.iconTheme": "vscode-icons",
-  "update.mode": "none",
-  "git.openRepositoryInParentFolders": "never",
   "editor.formatOnSave": true,
-  "vsicons.dontShowNewVersionMessage": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedLocales": {
+    "ja": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.ai.model": null,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.currentLine.enabled": true,
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": true,
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.outputLevel": "error",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "gitlens.views.repositories.compact": true,
+  "gitlens.views.worktrees.files.layout": "list",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.checkJs": true,
   "search.exclude": {
-    "**/node_modules": true,
+    "**/dist": true,
+    "**/.nuxt": true,
+    "**/.next": true,
+    "**/.vercel": true,
     "**/*.yaml": true,
-    "**/.next": true
+    "**/node_modules": true,
+    "**/public/images/**": true
   },
   "search.useIgnoreFiles": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1",
     "Q_NEW_SESSION": "1"
   },
-  "editor.accessibilitySupport": "off",
-  "editor.unicodeHighlight.allowedLocales": {
-    "ja": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "security.workspace.trust.untrustedFiles": "open",
-  "gitlens.launchpad.indicator.enabled": false,
-  "git.enableSmartCommit": true,
-  "oneDarkPro.editorTheme": "One Dark Pro Darker",
-  "oneDarkPro.italic": false,
-  "gitlens.outputLevel": "error",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "workbench.sideBar.location": "right",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.mode": "none",
   "workbench.activityBar.location": "top",
-  "chat.agent.maxRequests": 100,
-  "chat.tools.urls.autoApprove": {
-    "https://github.com": {
-      "approveRequest": false,
-      "approveResponse": true
-    },
-    "https://learn.microsoft.com/en-us/graph/api/resources/teamsrecording": true,
-    "https://learn.microsoft.com/en-us/graph/api/resources": true,
-    "https://learn.microsoft.com/en-us/graph/api": true,
-    "https://learn.microsoft.com/en-us/graph": true,
-    "https://learn.microsoft.com/en-us": true,
-    "https://learn.microsoft.com": true,
-    "https://*.microsoft.com": true,
-    "https://learn.microsoft.com/en-us/graph/api/resources/driveitem": true,
-    "https://learn.microsoft.com/en-us/graph/api/channel-get-messagedetail": true,
-    "https://learn.microsoft.com/en-us/graph/auth-v2-service-principal": true,
-    "https://learn.microsoft.com/en-us/graph/auth-v2-user": true
-  },
-  "chat.viewSessions.orientation": "stacked",
   "workbench.colorTheme": "calmppuccin-macchiato",
-  "editor.tabSize": 2,
   "workbench.editor.customLabels.patterns": {
     "**/app/**/layout.tsx": "${dirname} - layout.tsx",
     "**/app/**/page.tsx": "${dirname} - page.tsx",
     "**/app/**/layout.jsx": "${dirname} - layout.jsx",
     "**/app/**/page.jsx": "${dirname} - page.jsx"
-  }
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none"
 }

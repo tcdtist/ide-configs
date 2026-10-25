@@ -1,14 +1,17 @@
 {
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
   "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
@@ -25,9 +28,16 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[xml]": {
     "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
+  "agCockpit.displayMode": "webview",
+  "agCockpit.groupingEnabled": false,
+  "agCockpit.notificationEnabled": false,
+  "agCockpit.statusBarFormat": "compact",
   "cSpell.language": "en,en-US,vi",
   "cSpell.userWords": [
     "actived",
@@ -76,23 +86,42 @@
   "editor.fontFamily": "'Cascadia Code', 'Roboto', 'Arial', 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
+  "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
   "editor.unicodeHighlight.allowedLocales": {
     "ja": true
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "files.autoSave": "afterDelay",
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.ignoreRebaseWarning": true,
   "git.openRepositoryInParentFolders": "never",
+  "gitlens.ai.model": null,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.currentLine.enabled": true,
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": true,
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.outputLevel": "error",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "gitlens.views.repositories.compact": true,
   "gitlens.views.worktrees.files.layout": "list",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.checkJs": true,
+  "python.languageServer": "Default",
   "search.exclude": {
     "**/dist": true,
     "**/.nuxt": true,
@@ -109,63 +138,19 @@
     "FIG_NEW_SESSION": "1",
     "Q_NEW_SESSION": "1"
   },
-  "vsicons.dontShowNewVersionMessage": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.mode": "none",
+  "window.restoreWindows": "one",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "calmppuccin-macchiato",
   "workbench.editor.customLabels.patterns": {
     "**/app/**/layout.tsx": "${dirname} - layout.tsx",
     "**/app/**/page.tsx": "${dirname} - page.tsx",
     "**/app/**/layout.jsx": "${dirname} - layout.jsx",
     "**/app/**/page.jsx": "${dirname} - page.jsx"
   },
-  "workbench.startupEditor": "none",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": true,
+  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
-  "editor.tabSize": 2,
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "extensions.ignoreRecommendations": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "[cpp]": {
-    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
-  },
-  "claudeCode.selectedModel": "default",
-  "workbench.colorTheme": "calmppuccin-macchiato",
-  "update.mode": "none",
-  "workbench.activityBar.location": "top",
-  "windsurf.autoContinue": 0,
-  "windsurf.allowCascadeAccessGitignoreFiles": true,
-  "windsurf.searchMaxWorkspaceFileCount": 8000,
-  "windsurf.acp.enabledAgents": {
-    "devin-cloud": false
-  },
-  "claudeCode.preferredLocation": "panel",
-  "files.autoSave": "afterDelay",
   "workbench.sideBar.location": "right",
-  "mcpServers": {},
-  "windsurf.terminal.cascadeProfile.osx": "managed",
-  "codium.customInstructions.allMessages": "",
-  "codium.customInstructions.specificCommands": {},
-  "codium.editorButton": true,
-  "codium.codeCompletion.enable": false,
-  "codium.rag.maxRemoteSnippets": 5,
-  "codium.terminalAllowedCommands": [],
-  "codium.terminalBlockedCommands": [],
-  "codium.commitMessage.format": "",
-  "codium.agenticAiCliCommands": [],
-  "explorer.confirmPasteNative": false,
-  "python.languageServer": "Default",
-  "agCockpit.statusBarFormat": "compact",
-  "agCockpit.notificationEnabled": false,
-  "agCockpit.displayMode": "webview",
-  "windsurfPyright.disableLanguageServices": true,
-  "cursorpyright.disableLanguageServices": true,
-  "agCockpit.groupingEnabled": true,
-  "mssql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
-  "mssql.objectExplorer.groupBySchema": false,
-  "mssql.autoDisableNonTSqlLanguageService": false,
-  "security.promptForLocalFileProtocolHandling": false,
-  "window.restoreWindows": "one"
+  "workbench.startupEditor": "none"
 }

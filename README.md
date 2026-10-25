@@ -30,6 +30,7 @@ Use this directory map to navigate directly to the relevant module. Keep modific
 | :--- | :--- | :--- |
 | **Theme & Palette** | [`common/themes/`](common/themes/) | 3-theme minimalist palette, picker trimming, and theme docs |
 | **Code Formatting & Linting** | [`common/formatting.json`](common/formatting.json) | Shared Prettier configs, ESLint fix-on-save, fonts, and tab sizes |
+| **Git & GitLens Zen Mode** | [`common/git.json`](common/git.json) | Shared Git ergonomics & zero-bloat inline line blame |
 | **Search Exclusions** | [`common/search-exclude.json`](common/search-exclude.json) | Build artifact (`dist`, `.next`, `node_modules`) search ignores |
 | **Tab Labels (Next.js)** | [`common/nextjs-custom-labels.json`](common/nextjs-custom-labels.json) | Next.js App Router tab naming patterns (`${dirname} - ${filename}`) |
 | **Antigravity IDE** | [`ides/antigravity/`](ides/antigravity/) | Antigravity settings, keybindings, and local templates |
