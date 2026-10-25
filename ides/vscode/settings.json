@@ -78,7 +78,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "calmppuccin-macchiato",
+  "workbench.colorTheme": "Default Dark Modern",
   "workbench.editor.customLabels.patterns": {
     "**/app/**/layout.tsx": "${dirname} - layout.tsx",
     "**/app/**/page.tsx": "${dirname} - page.tsx",
