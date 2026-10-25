@@ -20,8 +20,8 @@ Rapid, automated setup guide for developers and AI Coding Agents setting up a ne
 
 ### Step 1: Clone Repository
 ```bash
-git clone git@github.com-tcdtist:tcdtist/ide-configs.git ~/dev/me/ide-configs
-cd ~/dev/me/ide-configs
+git clone https://github.com/tcdtist/ide-configs.git
+cd ide-configs
 ```
 
 ### Step 2: Run Unified Setup Script

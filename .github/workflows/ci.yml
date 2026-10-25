@@ -1,0 +1,92 @@
+name: CI & Integrity Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-configs:
+    name: Validate JSON, Extensions & Scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate JSON Syntax
+        run: |
+          echo "Validating all JSON files in repository..."
+          python3 -c "
+          import json, glob, sys
+          files = glob.glob('**/*.json', recursive=True)
+          for f in files:
+              with open(f, 'r', encoding='utf-8') as fp:
+                  try:
+                      json.load(fp)
+                  except Exception as e:
+                      print(f'::error file={f}::Invalid JSON: {e}')
+                      sys.exit(1)
+          print(f'Successfully validated {len(files)} JSON files.')
+          "
+
+      - name: Validate Extension Recommendations Format
+        run: |
+          echo "Validating extension ID recommendations..."
+          python3 -c "
+          import json, glob, re, sys
+          files = glob.glob('**/extensions.json', recursive=True)
+          pattern = re.compile(r'^[a-zA-Z0-9_\-]+\.[a-zA-Z0-9_\-]+$')
+          for f in files:
+              with open(f, 'r', encoding='utf-8') as fp:
+                  data = json.load(fp)
+              for ext in data.get('recommendations', []):
+                  if not pattern.match(ext):
+                      print(f'::error file={f}::Invalid extension identifier: {ext}')
+                      sys.exit(1)
+          print(f'Successfully validated recommendations across {len(files)} extension files.')
+          "
+
+      - name: Python Scripts Compilation & CLI Test
+        run: |
+          echo "Compiling Python scripts..."
+          python3 -m py_compile scripts/*.py
+          echo "Running CLI help flags..."
+          python3 scripts/setup-curated-themes.py --help
+          python3 scripts/setup-ide.py --help
+
+      - name: PII & Security Guard Scan
+        run: |
+          echo "Scanning for accidental secrets, private keys, or local macOS user paths..."
+          python3 -c "
+          import glob, re, sys
+          files = glob.glob('**/*.json', recursive=True) + glob.glob('scripts/*.py')
+          patterns = [
+              (re.compile(r'-----BEGIN [A-Z ]*PRIVATE KEY-----'), 'Private key found'),
+              (re.compile(r'/Users/[a-zA-Z0-9_\-]+/'), 'Hardcoded /Users/ path found'),
+              (re.compile(r'ghp_[a-zA-Z0-9]{20,}'), 'GitHub token found'),
+              (re.compile(r'AKIA[0-9A-Z]{16}'), 'AWS Access Key found')
+          ]
+          violations = 0
+          for f in files:
+              with open(f, 'r', encoding='utf-8', errors='ignore') as fp:
+                  content = fp.read()
+              for pattern, desc in patterns:
+                  matches = pattern.findall(content)
+                  if matches:
+                      print(f'::error file={f}::Security/PII violation: {desc} ({matches[0]})')
+                      violations += 1
+          if violations > 0:
+              sys.exit(1)
+          print('PII & Security scan passed with 0 violations.')
+          "

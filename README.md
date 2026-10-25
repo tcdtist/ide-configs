@@ -56,8 +56,8 @@ When modifying or extending this repository:
 
 ### 1. Clone the Repository
 ```bash
-git clone git@github.com-tcdtist:tcdtist/ide-configs.git ~/dev/me/ide-configs
-cd ~/dev/me/ide-configs
+git clone https://github.com/tcdtist/ide-configs.git
+cd ide-configs
 ```
 
 ### 2. Automated 1-Minute IDE Setup
